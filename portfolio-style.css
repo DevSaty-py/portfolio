@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1f242d;
+    color: #fff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f242d;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #7cf03d;
+}
+
+.portfolio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 9%;
+    text-align: center;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 0.9s;
+}
+
+.portfolio-content {
+    max-width: 800px;
+}
+
+.portfolio-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #7cf03d;
+}
+
+.portfolio-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin-bottom: 40px; 
+}
+
+.project {
+    background: #2a2f3b;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #7cf03d;
+}
+
+.project h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project h2 a {
+    color: #7cf03d;
+    transition: 0.3s;
+}
+
+.project h2 a:hover {
+    text-decoration: underline;
+}
+
+.project p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+.technologies {
+    padding: 20px 9%; 
+    text-align: center;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+
+
+.technologies h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #7cf03d;
+}
+
+.technologies ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.technologies li {
+    font-size: 18px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+footer {
+    padding: 40px 9%;
+    text-align: center;
+    background: #1f242d;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.footer-content ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content ul li {
+    list-style: none;
+}
+
+.footer-content ul li a {
+    font-size: 16px;
+    color: #7cf03d;
+    transition: 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #fff;
+}
+
+
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
